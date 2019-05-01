@@ -14,7 +14,7 @@ FILTER_DELAY_INDEX = 2
 FILTER_PREVIOUS_INDEX = 3
 
 
-def greedy_filter_rule(np, filter_rule, money):
+def greedy_filter_rule(np_array, filter_rule, money):
     """
         Funcao gulosa para realizar a compra e venda das acoes com base na regra do filtro
         :param: np - array com as informacoes de data e valor das acoes
@@ -24,6 +24,7 @@ def greedy_filter_rule(np, filter_rule, money):
     """
     i = 1
     stock_count = 0
+    peaks = findPeakAndValley(np_array)
     while (i < len(np_array)):
         if (getSignal(np_array, i, filter_rule[FILTER_PREVIOUS_INDEX], peaks, filter_rule[FILTER_RATE_INDEX]) == 1):
             stock_count = int(money/np_array[i][STOCK_VALUE_INDEX])
