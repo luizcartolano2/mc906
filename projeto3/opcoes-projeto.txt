@@ -1,0 +1,80 @@
+Aerospace
+	Altitude control of spacecraft
+	Satellite altitude control
+	Flow and mixture regulation in aircraft deicing vehicles
+Automotive
+	Trainable fuzzy systems for idle speed control
+	Shift scheduling method for automatic transmission
+	Intelligent highway systems
+	Traffic control
+	Improving efficiency of automatic transmissions
+Business
+	Decision-making support systems
+	Personnel evaluation in a large company
+Defense
+	Underwater target recognition
+	Automatic target recognition of thermal infrared images
+	Naval decision support aids
+	Control of a hypervelocity interceptor
+	Fuzzy set modeling of NATO decision making
+Electronics
+	Control of automatic exposure in video cameras
+	Humidity in a clean room
+	Air conditioning systems
+	Washing machine timing
+	Microwave ovens
+	Vacuum cleaners
+Finance
+	Banknote transfer control
+	Fund management
+	Stock market predictions
+Industrial Sector
+	Cement kiln controls heat exchanger control
+	Activated sludge wastewater treatment process control
+	Water purification plant control
+	Quantitative pattern analysis for industrial quality assurance
+	Control of constraint satisfaction problems in structural design
+	Control of water purification plants
+Manufacturing
+	Optimization of cheese production
+	Optimization of milk production
+Marine
+	Autopilot for ships
+	Optimal route selection
+	Control of autonomous underwater vehicles
+	Ship steering
+Medical
+	Medical diagnostic support system
+	Control of arterial pressure during anesthesia
+	Multivariable control of anesthesia
+	Modeling of neuropathological findings in Alzheimer's patients
+	Radiology diagnoses
+	Fuzzy inference diagnosis of diabetes and prostate cancer
+Securities
+	Decision systems for securities trading
+	Various security appliances
+Transportation
+	Automatic underground train operation
+	Train schedule control
+	Railway acceleration
+	Braking and stopping
+Pattern Recognition and Classification
+	Fuzzy logic based speech recognition
+	Fuzzy logic based
+	Handwriting recognition
+	Fuzzy logic based facial characteristic analysis
+	Command analysis
+	Fuzzy image search
+Psychology
+	Fuzzy logic based analysis of human behavior
+	Criminal investigation and prevention based on fuzzy logic reasoning
+Image Processing
+	Noise detection and removal
+	Contrast Enhancement
+Politics
+	https://ieeexplore.ieee.org/document/944730
+	https://link.springer.com/chapter/10.1007/978-3-540-77461-7_1
+	https://www.researchgate.net/publication/31402550_Fuzzy_Decision_Making_in_Politics_A_Linguistic_Fuzzy-Set_Approach_LFSA
+	http://www.congresoalacip2017.org/arquivo/downloadpublic2?q=YToyOntzOjY6InBhcmFtcyI7czozNToiYToxOntzOjEwOiJJRF9BUlFVSVZPIjtzOjQ6IjI5NzkiO30iO3M6MToiaCI7czozMjoiYjdkMWQ4NmQ4ODAxOTNlZWM0YmZjOGMxYTZmMjUyNzMiO30%3D
+	https://diuf.unifr.ch/main/is/sites/diuf.unifr.ch.main.is/files/documents/publications/A_Fuzzy-Based_Advisor_for_Elections_and_the_Creation_of_Political_Communities.pdf
+	http://www.ijari.org/CurrentIssue/ICARI2014/ICARI-AS-14-02-105.pdf
