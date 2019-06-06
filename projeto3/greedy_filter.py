@@ -8,10 +8,12 @@ import random
 
 # Definição de constantes
 STOCK_VALUE_INDEX = 1
+STOCK_BETA_INDEX = 3
 FILTER_RATE_INDEX = 0
 FILTER_HOLD_INDEX = 1
 FILTER_DELAY_INDEX = 2
 FILTER_PREVIOUS_INDEX = 3
+FILTER_THRESHOLD_INDEX = 4
 
 
 def greedy_filter_rule(np_array, filter_rule, money):
@@ -68,6 +70,8 @@ def getSignal (np, today_index, previous_days, peaks, rate):
                 else:
                     last_index = -1 # Valley
     percentage_today_last_peak_valey = np[today_index][STOCK_VALUE_INDEX]/np[last_index_peak_valley][STOCK_VALUE_INDEX]
+    average_variation = get_average_variation(np[:,2], previous_days, today_index)
+    
     if (percentage_today_last_peak_valey > 1 and abs(percentage_today_last_peak_valey - 1) >= rate):
         signal = 1 # Buy
     elif(percentage_today_last_peak_valey < 1 and abs(percentage_today_last_peak_valey - 1) >= rate):
@@ -81,6 +85,13 @@ def getSignal (np, today_index, previous_days, peaks, rate):
         return -1
     return 0
 
+def get_average_variation(np_array, window_size, today_index):
+    lambda_function = lambda x : abs(x)
+    if (today_index > window_size+1):
+        slice_array = np_array[today_index - window_size: today_index]
+    else:
+        slice_array = np_array[1:today_index]
+    return lambda_function(slice_array).mean()
 
 def findPeakAndValley(np):
     """
@@ -95,4 +106,3 @@ def findPeakAndValley(np):
         if (np[i][STOCK_VALUE_INDEX] / np[i - 1][STOCK_VALUE_INDEX] < 1 and np[i + 1][STOCK_VALUE_INDEX] / np[i][STOCK_VALUE_INDEX] > 1):
             peakValleyArray.append(i)
     return peakValleyArray
-
