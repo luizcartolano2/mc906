@@ -221,7 +221,7 @@ def getSignal (np, today_index, previous_days, peaks, rate):
         #print(np[i][STOCK_BETA_INDEX])
         risk = fuzzy_risk_triangle(get_average_variation(np[:,2], previous_days, today_index), np[i][STOCK_BETA_INDEX], 'centroid')
         #print("Risk: ", risk, "Percentage", round(abs(percentage_today_last_peak_valey - 1),4))
-        percentage = fuzzy_pct_triangle(abs(percentage_today_last_peak_valey - 1), risk, 'lom')
+        percentage = fuzzy_pct_triangle(abs(percentage_today_last_peak_valey - 1), risk, 'centroid')
         #print ("Percentage Last PEak: ", abs(percentage_today_last_peak_valey-1))
         if (percentage_today_last_peak_valey > 1 and abs(percentage_today_last_peak_valey - 1) >= rate):
             signal = 1 # Buy
